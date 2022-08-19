@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Usuario } from 'src/app/interfaces/usuario';
 
 const listUsuarios: Usuario[] = [
-  {usuario: "camilo", nombre: 'Camilo', apellido: 'Cadavid', ciudad: 'Bogotá',direccion: 'Calle 65' },
+  {usuario: "camilo", nombre: 'Camilo', apellido: 'Cadavid', ciudad: 'Bogotá', direccion: 'Calle 65', celular: 3123900078, correo: 'dacane@gmail.com' },
 
 ];
 
@@ -13,7 +13,7 @@ const listUsuarios: Usuario[] = [
 })
 export class UsuariosComponent implements OnInit {
 
-  displayedColumns: string[] = ['nombre', 'apellido', 'ciudad', 'direccion', 'acciones'];
+  displayedColumns: string[] = ['nombre', 'apellido', 'ciudad', 'direccion', 'celular' , 'correo', 'acciones'];
   dataSource = listUsuarios;
 
   constructor() { }
